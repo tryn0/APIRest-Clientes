@@ -49,7 +49,7 @@ public class ClienteController {
         try {
             Cliente c = cs.findById(id).get();
             return new ClienteDTO(false, c, "");
-        }catch (NoSuchElementException nsee){
+        }catch (NoSuchElementException nsee) {
             return new ClienteDTO(true, null, "Cliente no encontrado");
         }
     }
@@ -62,7 +62,7 @@ public class ClienteController {
             c.setTlf(clienteModificado.getTlf());
             cs.update(c);
             return new ClienteDTO(false, c, "");
-        }catch (NoSuchElementException nsee){
+        }catch (NoSuchElementException nsee) {
             return new ClienteDTO(true, null, "Cliente no encontrado");
         }
     }
@@ -73,7 +73,7 @@ public class ClienteController {
             Cliente c = cs.findById(id).get();
             cs.deleteById(id);
             return new ClienteDTO(false, c, "");
-        }catch (NoSuchElementException nsee){
+        }catch (NoSuchElementException nsee) {
             return new ClienteDTO(true, null, "Cliente no encontrado");
         }
     }
