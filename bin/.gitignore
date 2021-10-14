@@ -4,14 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### Eclipse ###
-*target*
-*.war
-*.jar
-*.class
-.classpath
-.settings/
-
 ### STS ###
 .apt_generated
 .classpath
